@@ -1,0 +1,14 @@
+:root{
+  --colorPrimario: #EC111A;
+  --ColorSecundario: #B2C2B2;
+}
+
+body{
+  background-color: rgb(209, 43, 21);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
