@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import AlumnoCard from './components/AlumnoCard/AlumnoCard'
+import Contador from './components/Contador/Contador'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -20,41 +15,25 @@ function App() {
       <AlumnoCard
         nombre="Daniel Puccio"
         carrera="Desarrollo de Software"
-        estado="Matriculado"
+        estadoInicial="Matriculado"
         />
 
         <AlumnoCard
         nombre="Maria Perez"
         carrera="Diseño Gráfico"
-        estado="Inactivo"
+        estadoInicial="Inactivo"
         />
 
         <AlumnoCard
         nombre="Carlos Mendoza"
         carrera="Administración Industrial"
-        estado="Matriculado"
+        estadoInicial="Matriculado"
         />
-
-        <AlumnoCard
-        nombre="Flavio Vega"
-        carrera="Ingenieria en armado de Vasitos"
-        estado="Inactivo"
-        />
-
-        <AlumnoCard
-        nombre="Kevin Muños"
-        carrera="Panaderia nuclear"
-        estado="Activo"
-        />
-
-        <AlumnoCard
-        nombre="Brayan Huaman"
-        carrera="Ingenieria de Sistemas"
-        estado="Matriculado"
-        />
-
 
       </div>
+      <Contador
+      />
+
       </div>
     
     </>
